@@ -241,10 +241,10 @@
             for (var id = 0; id < portfolioData.length; id += 4) {
                 var items = portfolioData.slice(id, id + 4);
                 var portfolioRow = $('<div class="row"></div>');
-                _.each(items, function(item) {
+                _.each(items, function(item, offset) {
                     var itemTemplate = _.template($('script.template-item').html());
                     var modalTemplate = _.template($('script.template-modal').html());
-                    _.extend(item, {id: id});
+                    _.extend(item, {id: id + offset});
                     portfolioRow.append(itemTemplate(item));
                     $('body').append(modalTemplate(item));
                 });
