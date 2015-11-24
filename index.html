@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Natalie Isenberg</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Natalie's Portfolio</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 style = "color:white"><font face = "Arial">Natalie Malka Isenberg</font></h1>
+            <h3 style = "color:white">Portfolio &amp; About</h3>
+            <br>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="my-info col-lg-4 text-right">
+                    <img src = "img/self.jpg" height = "200" width = "176"></img>
+                    <h4>Natalie Malka Isenberg</h4>
+                    <p>University of Pittsburgh</p>
+                    <p>Department of Chemical and Petroleum Engineering</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a>(410)-299-9125</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <a href="mailto:isenberg.natalie@gmail.com">isenberg.natalie@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-paperclip fa-fw"></i>
+                            <a href="natalie_isenberg.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 text-left">
+                    <h2 style="color:#B4DE9F">Welcome</h2>
+                    <p class="lead">I am currently a senior Chemical Engineering student at the University of Pittsburgh with a minor in Computer Science. I am deeply interested in STEM outreach and education, as well as scientific research. My research interests are broad, but currently I find bioinformatics and molecular simulation based work to be the most compelling. I am currently in the process of applying to related PhD programs. </p>
+                    <p class = "lead"> My interests don't stop there! I am an artist, and have a partial portfolio of my paintings available to view here on my site. I also enjoy bike riding, hiking, climbing, and the great city of Pittsburgh!</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center portfolio-images">
+                    <h1 style = "color:#B4DE9F">Portfolio</h1>
+                    <br>
+                </div>
+                <!-- /.col-lg-10 -->
+             </div>
+            <!-- /.row -->
+        </div>
+         <!-- /.container -->
+    </section>
+
+
+    <!-- Templates -->
+    <script type="text/template" class="template-item">
+        <div class="col-md-3">
+            <div class="portfolio-item">
+                <a href="javascript:;">
+                    <img class="img-responsive img-portfolio" src="img/<%= url %>" data-toggle="modal" href="#modal-id-<%= id %>">
+                </a>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" class="template-modal">
+        <div class="modal fade" id="modal-id-<%= id %>" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title" id="myModalLabel"><%= title %></h4>
+                </div>
+                <div class="modal-body" align = "middle">
+                    <img class = "img-modal" src = "img/<%= url %>" height="<%= height %>" width="<%= width %>" align="middle">
+                    <h3><%= medium %></h3>
+                    <h5><%= description %></h5>
+                    </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </script>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1><font face = "Arial"></font></h1>
+        </div>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Underscore -->
+    <script src="js/underscore.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+        var portfolioData = [
+            {
+                url: "portfolio-1.jpg",
+                width: 475,
+                height: 468,
+                title: "Untitled 1",
+                medium: "Acrylic on two stretched canvases",
+                description: "The work came out of my interests in combining scientific concepts with a visual element. This piece is a visual interpretation of 'a singularity'"
+            },
+            {
+                url: "portfolio-2.jpg",
+                width: 323,
+                height: 439,
+                title: "Untitled 2",
+                medium: "Acrylic on stretched canvas",
+                description: "This piece was an attempt to peer into the 4th spacial dimension, where shapes and forms as we know them are entirely alien."
+            },
+            {
+                url: "portfolio-3.jpg",
+                width: 476,
+                height: 495,
+                title: "Untitled 3",
+                medium: "Acrylic on stretched canvas",
+                description: "An image to illustrate the fluid nature of matter and energy."
+            },
+            {
+                url: "portfolio-4.jpg",
+                width: 265,
+                height: 395,
+                title: "Untitled 4",
+                medium: "Acrylic on stretched canvas",
+                description: "'I am become death, destroyer of worlds'"
+            },
+            {
+                url: "portfolio-5.jpg",
+                width: 538,
+                height: 383,
+                title: "Untitled 5",
+                medium: "Acrylic on stretched canvas",
+                description: "Self portrait at 80 years"
+            }
+        ];
+
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $("#menu-toggle").show();
+        });
+
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $("#menu-toggle").hide();
+        });
+
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+        // Render all portfolio items and their modals
+        $(document).ready(function() {
+            for (var id = 0; id < portfolioData.length; id += 4) {
+                var items = portfolioData.slice(id, id + 4);
+                var portfolioRow = $('<div class="row"></div>');
+                _.each(items, function(item) {
+                    var itemTemplate = _.template($('script.template-item').html());
+                    var modalTemplate = _.template($('script.template-modal').html());
+                    _.extend(item, {id: id});
+                    portfolioRow.append(itemTemplate(item));
+                    $('body').append(modalTemplate(item));
+                });
+                $('.portfolio-images').append(portfolioRow);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
