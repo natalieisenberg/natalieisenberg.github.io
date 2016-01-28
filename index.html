@@ -49,6 +49,9 @@
             <li>
                 <a href="#portfolio">Portfolio</a>
             </li>
+            <li>
+                  <a href="#teach">Teaching</a>
+            </li>
         </ul>
     </nav>
 
@@ -129,20 +132,36 @@
                  <div class="modal-content">
                      <div class="modal-header">
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                     <h4 class="modal-title" id="myModalLabel"><%= title %></h4>
+                     <h3 class="modal-title" id="myModalLabel" style = "color:#f2f2f2"><%= title %></h4>
                 </div>
                 <div class="modal-body" align = "middle">
                     <img class = "img-modal" src = "img/<%= url %>" height="<%= height %>" width="<%= width %>" align="middle">
-                    <h3><%= medium %></h3>
-                    <h5><%= description %></h5>
+                    <h4 style = "color:#b3b3b3"><%= medium %></h3>
+                    <h4 style = "color:#b3b3b3"><%= description %></h5>
                     </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
              </div>
         </div>
     </script>
+
+     <!-- Teaching -->
+    <section id="teach" class="teaching-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h1 style = "color:#B4DE9F">Teaching</h1>
+                    <br>
+                    <h3 style = "color:#B4DE9F">(Coming Soon)</h3>
+                </div>
+                <!-- /.col-lg-10 -->
+             </div>
+            <!-- /.row -->
+        </div>
+         <!-- /.container -->
+    </section>
+
 
     <!-- Callout -->
     <aside class="callout">
@@ -169,7 +188,7 @@
                 height: 468,
                 title: "The Singularity",
                 medium: "Acrylic on two stretched canvases",
-                description: "The work came out of my interests in combining scientific concepts with a visual element. This piece is a visual interpretation of 'a singularity.'"
+                description: "A visual interpretation of 'a singularity.'"
             },
             {
                 url: "portfolio-2.jpg",
@@ -177,7 +196,7 @@
                 height: 439,
                 title: "4D",
                 medium: "Acrylic on stretched canvas",
-                description: "This piece was an attempt to peer into the 4th spatial dimension, where shapes and forms as we know them are entirely alien."
+                description: "An attempt to peer into the 4th spatial dimension."
             },
             {
                 url: "portfolio-3.jpg",

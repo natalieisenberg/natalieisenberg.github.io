@@ -208,6 +208,11 @@ hr.small {
     background: #fafafa;
 }
 
+.teaching-portfolio {
+    padding: 50px 0;
+    background: #f2f2f2;
+}
+
 .portfolio-item {
     margin-bottom: 30px;
     height: 200px;
