@@ -171,6 +171,7 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    background:#fafafa;
 }
 
 .my-info {
@@ -209,17 +210,17 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
-    background: #fafafa;
+    background: #ffffff;
 }
 
 .teaching-portfolio {
     padding: 50px 0;
-    background: #f2f2f2;
+    background: #fafafa;
 }
 
 .research {
     padding: 50px 0;
-    background: #fafafa;
+    background: #ffffff;
 }
 
 .portfolio-item {
