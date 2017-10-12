@@ -38,7 +38,7 @@ p {
 .btn-dark {
     border-radius: 3px;
     color: white;
-    background: #B4DE9F;
+    background: #42663D;
 }
 
 .btn-dark:hover,
@@ -177,6 +177,10 @@ hr.small {
     border-right: 2px solid #B4DE9F;
 }
 
+.gif-align {
+    border-right: 2px solid #FFFFFF;
+}
+
 /* Services */
 
 .services {
@@ -211,6 +215,11 @@ hr.small {
 .teaching-portfolio {
     padding: 50px 0;
     background: #f2f2f2;
+}
+
+.research {
+    padding: 50px 0;
+    background: #fafafa;
 }
 
 .portfolio-item {
